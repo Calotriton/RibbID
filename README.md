@@ -81,7 +81,7 @@ RibbID/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/<your_username>/RibbID.git
+git clone https://github.com/Calotriton/RibbID.git
 cd RibbID
 ```
 
@@ -168,6 +168,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ### 💚 Citation
 
-If you use RibbID for research or conservation purposes, please consider citing the repository or referencing it in your materials.
+If you use RibbID for research or conservation purposes, cite the present repository.
 
 ---

@@ -1,1 +1,0 @@
-CNN model link: https://huggingface.co/Calotriton/RibbID_CNN/tree/main

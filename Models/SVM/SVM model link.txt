@@ -1,1 +1,0 @@
-SVM model link: https://huggingface.co/Calotriton/RibbID_SVM/tree/main

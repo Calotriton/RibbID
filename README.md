@@ -2,6 +2,8 @@
 
 **RibbID** is a bioacoustic machine learning project designed to identify multiple species of frogs and toads (order *Anura*) in field audio recordings from Catalonia (northern Spain). Leveraging convolutional neural networks on spectrogram inputs and classical baselines, the model can detect the presence of one or more of **nine target species** within a single recording.
 
+https://huggingface.co/spaces/Calotriton/RibbID
+
 ---
 
 ## 📑 Table of Contents
@@ -21,6 +23,8 @@
 
 The goal of **RibbID** is to provide researchers and conservationists with a tool to automatically detect and identify multiple frog species from a single audio recording. By focusing exclusively on frogs native to Catalonia, the model is specialized for local biodiversity monitoring and can be integrated into desktop or mobile applications for real‑time or batch inference.
 
+The project is totally usable and can be found deployed in: https://huggingface.co/spaces/Calotriton/RibbID
+
 ### 🔑 Key Features
 
 - **Multi‑label classification**: Detect more than one species in the same clip.
@@ -36,13 +40,12 @@ The model is trained to identify the following species of *Anura* found in Catal
 
 1. **Alytes obstetricans** *(Common midwife toad)*
 2. **Bufo spinosus** *(Spiny toad)*
-3. **Discoglossus pictus** *(Painted frog)*
-4. **Epidalea calamita** *(Natterjack toad)*
-5. **Hyla meridionalis** *(Mediterranean tree frog)*
-6. **Pelobates cultripes** *(Western spadefoot)*
-7. **Pelodytes punctatus** *(Common parsley frog)*
-8. **Pelophylax spp.** *(Green frogs complex)*
-9. **Rana temporaria** *(Common frog)*
+3. **Epidalea calamita** *(Natterjack toad)*
+4. **Hyla meridionalis** *(Mediterranean tree frog)*
+5. **Pelobates cultripes** *(Western spadefoot)*
+6. **Pelodytes punctatus** *(Common parsley frog)*
+7. **Pelophylax spp.** *(Green frogs complex)*
+8. **Rana temporaria** *(Common frog)*
 
 ---
 
@@ -56,18 +59,12 @@ RibbID/
 │   └── cleaned/         # Final cleaned metadata and filtered recordings
 │
 ├── notebooks/           # Numbered Jupyter Notebooks for EDA, preprocessing, training
-│   ├── 01_exploration.ipynb
-│   ├── 02_preprocessing.ipynb
-│   └── final.ipynb      # Clean notebook for demo and reporting
-│
-├── src/                 # Source code modules and scripts
-│   ├── preprocessing.py  # Audio loading, normalization, segmentation
-│   ├── features.py       # MFCC and spectrogram extraction
-│   ├── train.py          # Model definition, training loop
-│   └── inference.py      # Inference utilities and multi-label output
+│   ├── RibbID.ipynb
 │
 ├── models/              # Saved model checkpoints and exported artifacts
-├── reports/             # Generated figures, HTML/PDF notebooks, presentations
+│   ├── CNN              # CNN model, including the label encoder, detection thresholds and calibrator
+│   ├── SVM              # SVM model, including the scaler and the mfcc spectrograms
+│
 ├── environment.yml      # Conda environment specification
 ├── requirements.txt     # Pip requirements (if used)
 ├── .gitignore           # Ignore patterns for Git
